@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/tech_news_with_react.iml" filepath="$PROJECT_DIR$/.idea/tech_news_with_react.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../browser_home_dashboard_with_react/.idea/browser_home_dashboard_with_react.iml" filepath="$PROJECT_DIR$/../browser_home_dashboard_with_react/.idea/browser_home_dashboard_with_react.iml" />
     </modules>
   </component>
 </project>

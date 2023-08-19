@@ -2,9 +2,10 @@ import React from "react";
 import "../style.css";
 
 export const WelcomeText = () => {
+    let userName = "Moutasim";
     return (
         <div className="welcomeTxt">
-            <div className="text-wrapper">Welcome, User!</div>
+            Welcome, {userName}!
         </div>
     );
 };
