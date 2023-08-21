@@ -90,8 +90,24 @@ code {
     background-color: #404756;
     border-radius: 6px;
     margin: 10px;
-    height: 60px;
+    height: 70px;
     width: auto;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.newsBlock a {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin: 0 0 0 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: inherit;
 }
 
 .quickLinksList {
