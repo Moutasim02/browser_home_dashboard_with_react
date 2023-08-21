@@ -9,6 +9,9 @@ After each daily work I paste a screenshot of the done work + some changelog
 ### Changelog:
 
 Date: 19/ 08/ 2023
+- Updated the Daily feed to get fixed static news using react props
+
+Date: 19/ 08/ 2023
 - Continued making the components and used static elements
 
 Date: 17/ 08/ 2023
