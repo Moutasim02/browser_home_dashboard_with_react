@@ -1,31 +1,30 @@
-# Your web browser homepage
+# Your Web Browser Homepage
 A simple yet powerful homepage for your browser
 
-## Progress Update:
-After each daily work I paste a screenshot of the done work + some changelog
+## Progress Update
+After each day of work, I will provide a screenshot of the completed work along with a changelog.
 
 ![img.png](img.png)
 
-### Changelog:
+### Changelog
 
-Date: 19/ 08/ 2023
-- Updated the Daily feed to get fixed static news using react props
+**Date: 21/08/2023**
+- Updated the Daily feed to display fixed static news using React props.
 
-Date: 19/ 08/ 2023
-- Continued making the components and used static elements
+**Date: 19/08/2023**
+- Continued building the components and used static elements.
 
-Date: 17/ 08/ 2023
-- Added the main blocks of the app and layout using flexbox  
+**Date: 17/08/2023**
+- Added the main blocks of the app and layout using flexbox.
 
-Date: 16/ 08/ 2023
-- Finished Design via Figma
+**Date: 16/08/2023**
+- Finished the design using Figma.
 
-
-# Guided commands
+## Guided Commands
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -33,7 +32,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
@@ -46,6 +45,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Deployment
+## Deployment
 
-Go to: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+For deployment instructions, please refer to the official [Create React App Deployment Documentation](https://facebook.github.io/create-react-app/docs/deployment).
