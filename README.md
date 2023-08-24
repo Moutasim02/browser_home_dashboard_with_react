@@ -8,6 +8,9 @@ After each day of work, I will provide a screenshot of the completed work along 
 
 ### Changelog
 
+**Date: 24/08/2023**
+- Added automatic news to the feeds using NewsAPI
+
 **Date: 21/08/2023**
 - Updated the Daily feed to display fixed static news using React props.
 

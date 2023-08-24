@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../style.css";
 import {NewsBlock} from "./NewsBlock";
 
 // Show all feeds from the endpoint
+
 export const FeedContainer = () => {
+    const [newsData, setNewsData] = useState([]);
+    const apiKey = process.env.REACT_APP_API_KEY;
+
+    useEffect(() => {
+        const url =
+            "https://newsapi.org/v2/everything?" +
+            "q=programming&" +
+            "from=2023-08-20&" +
+            "sortBy=relevancy&" +
+            `apiKey=${apiKey}`;
+
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+                setNewsData(data.articles);
+            })
+            .catch((error) => {
+                console.error("Error fetching news data:", error);
+            });
+    }, [apiKey]);
+
 
     return (
         <div>
@@ -13,15 +35,13 @@ export const FeedContainer = () => {
             <div>
                 <div className="feedContainer">
                     <div className="newsList">
-                        <NewsBlock title="How modular can your monolith go? Part 2 - a first look at how subdomains collaborate"
-                                   link="https://microservices.io//post/architecture/2023/08/20/how-modular-can-your-monolith-go-part-2.html" ></NewsBlock>
-
-                        <NewsBlock title="Exploring Burp Suite’s Features: A Detailed Overview"
-                                   link="https://infosecwriteups.com/exploring-burp-suites-features-a-detailed-overview-2bacf809c6f8" ></NewsBlock>
-
-                        <NewsBlock title="Applying Design Principles In React"
-                                   link="https://blog.openreplay.com/applying-design-principles-in-react/" ></NewsBlock>
-
+                        {newsData.map((article, index) => (
+                            <NewsBlock
+                                key={index}
+                                title={article.title}
+                                link={article.url}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
