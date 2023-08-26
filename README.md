@@ -8,6 +8,9 @@ After each day of work, I will provide a screenshot of the completed work along 
 
 ### Changelog
 
+**Date: 27/08/2023**
+- Fixed Quick links with fixed 7 links as my bookmark, I know I should have done the custom links feature but I decided to make it easier
+
 **Date: 24/08/2023**
 - Added automatic news to the feeds using NewsAPI
 
