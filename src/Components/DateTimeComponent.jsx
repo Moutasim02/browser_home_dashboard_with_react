@@ -10,9 +10,9 @@ function DateTimeComponent() {
         minute: "numeric",
         hour12: true
     };
-    const formattedDate = date.toLocaleString("en-US", options);
 
-    return <h1 className="datetime">{formattedDate}</h1>;
+    const formattedDate = date.toLocaleString("en-US", options);
+    return <div className="welcomeTxt">{formattedDate}</div>;
 }
 
 export default DateTimeComponent;

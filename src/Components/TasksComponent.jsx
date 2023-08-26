@@ -4,27 +4,28 @@ import { TaskBlock } from "./TaskBlock";
 
 export const TasksComponent = () => {
     const customStyle = {
-        width: "34vw",
-        margin: "0 0 0 0"
-    };
-    const customStyle2 = {
-        width: "34vw",
-        height: "62.5vh",
-        margin: "0 0 0 0"
-    };
+        height: "31rem", // Adjust the value based on your desired height
+        overflow: "auto"
+    }
+
     return (
         <div>
-            <div className="titleContainer" style={customStyle}>
+            <div className="titleContainer" >
                 <h2 className="titleContainerText">Tasks</h2>
             </div>
             <div>
-                <div className="feedContainer" style={customStyle2}>
-                    <input type={"text"} className="addTaskInput"
-                           enterKeyHint={"enter"} placeholder={"Write the task and press enter \u23CE"}/>
+                <div className="generalContainer" style={customStyle}>
+                    <div className="addTaskContainer">
+                        <input type={"text"} className="addTaskInput"
+                               enterKeyHint={"enter"} placeholder={"Write the task and press enter \u23CE"}/>
+                    </div>
                     <TaskBlock task="Task 1" />
                     <TaskBlock task="Task 2" />
                     <TaskBlock task="Task 3" />
                     <TaskBlock task="Task 4" />
+                    <TaskBlock task="Task 5" />
+                    <TaskBlock task="Task 5" />
+                    <TaskBlock task="Task 5" />
                 </div>
             </div>
         </div>

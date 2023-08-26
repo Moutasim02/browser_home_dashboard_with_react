@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import "../style.css";
 import {NewsBlock} from "./NewsBlock";
 
@@ -26,23 +26,20 @@ export const FeedContainer = () => {
             });
     }, [apiKey]);
 
-
     return (
         <div>
-            <div className="titleContainer">
+            <div className="feedTitleContainer">
                 <h2 className="titleContainerText">Daily Feed</h2>
             </div>
-            <div>
-                <div className="feedContainer">
-                    <div className="newsList">
-                        {newsData.map((article, index) => (
-                            <NewsBlock
-                                key={index}
-                                title={article.title}
-                                link={article.url}
-                            />
-                        ))}
-                    </div>
+            <div className="feedGeneralContainer">
+                <div className="newsList">
+                    {newsData.map((article, index) => (
+                        <NewsBlock
+                            key={index}
+                            title={article.title}
+                            link={article.url}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
