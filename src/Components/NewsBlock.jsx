@@ -6,7 +6,7 @@ export const NewsBlock = (params) => {
 
     return (
         <div className="newsBlock">
-                <a href={params.link}>{params.title + " - " + domain}</a>
+                <a title={params.title} href={params.link}>{params.title + " - " + domain}</a>
         </div>
     );
 };
