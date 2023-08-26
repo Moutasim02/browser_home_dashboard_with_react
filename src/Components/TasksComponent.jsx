@@ -24,8 +24,6 @@ export const TasksComponent = () => {
                     <TaskBlock task="Task 3" />
                     <TaskBlock task="Task 4" />
                     <TaskBlock task="Task 5" />
-                    <TaskBlock task="Task 5" />
-                    <TaskBlock task="Task 5" />
                 </div>
             </div>
         </div>
