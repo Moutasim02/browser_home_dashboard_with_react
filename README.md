@@ -14,6 +14,8 @@ After each day of work, I will provide a screenshot of the completed work along 
 - Changed the color of titles background
 - Refactored the CSS file for reduced cluttering and higher re-usability
 - Fixed Date and Time auto refresh not working
+- Added the ability to add/ remove task
+- Prepared for first deployment
 
 **Date: 24/08/2023**
 - Added automatic news to the feeds using NewsAPI
