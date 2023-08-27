@@ -51,7 +51,7 @@ export const TasksComponent = () => {
                     {tasks.map((task) => (
                         <TaskBlock key={task.id}
                                    task={task.text}
-                                   onClick={() => handleRemoveTask(task.id)}
+                                   onRemove={() => handleRemoveTask(task.id)}
                         />
                     ))}
                 </div>
