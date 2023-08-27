@@ -13,6 +13,7 @@ After each day of work, I will provide a screenshot of the completed work along 
 - Fixed responsiveness for different screens like mobile devices
 - Changed the color of titles background
 - Refactored the CSS file for reduced cluttering and higher re-usability
+- Fixed Date and Time auto refresh not working
 
 **Date: 24/08/2023**
 - Added automatic news to the feeds using NewsAPI
