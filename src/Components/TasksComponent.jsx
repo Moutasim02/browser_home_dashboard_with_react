@@ -4,7 +4,7 @@ import {TaskBlock} from "./TaskBlock";
 
 export const TasksComponent = () => {
     const customStyle = {
-        height: "31rem",
+        height: "35rem",
         overflow: "auto"
     }
 

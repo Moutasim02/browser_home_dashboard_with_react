@@ -1,6 +1,6 @@
 {
-  "name": "tech_news_with_react",
-  "version": "0.1.0",
+  "name": "home_dashboard",
+  "version": "1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
