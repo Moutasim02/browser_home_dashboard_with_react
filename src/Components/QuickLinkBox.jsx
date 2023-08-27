@@ -7,7 +7,7 @@ export const QuickLinkBox = (props) => {
             <a href={props.url} className="quickLink" title={props.name}>
                 <img
                     src={props.imgSrc}
-                    alt="Image Couldn't load"
+                    alt="Couldn't load"
                     className="quickLinkImage"
                 />
             </a>
