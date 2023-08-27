@@ -40,6 +40,7 @@ code {
     .dashboard {
         flex-direction: column;
     }
+
     .generalContainer,
     .titleContainer,
     .feedGeneralContainer,
@@ -47,6 +48,7 @@ code {
         width: 90vw;
         margin-left: 15px;
     }
+
     .feedTitleContainer {
         margin-left: 15px;
     }
@@ -56,15 +58,18 @@ code {
     .dashboard {
         gap: 1.5%;
     }
+
     .generalContainer,
     .titleContainer {
         width: 34vw;
         margin-left: 15px;
     }
+
     .feedGeneralContainer {
         margin-left: 15px;
         width: 62vw;
     }
+
     .feedTitleContainer,
     .titleContainer {
         margin-left: 15px;
@@ -107,8 +112,7 @@ code {
 }
 
 /* Title Container Styles */
-.titleContainerText
-{
+.titleContainerText {
     font-weight: bold;
     color: var(--text-color);
     padding: 5px;
@@ -251,7 +255,7 @@ code {
 }
 
 .taskBlock:hover .taskText {
-    text-decoration: line-through; /* Add strikethrough line on hover */
+    text-decoration: line-through;
 }
 
 /* Add Task Container Styles */

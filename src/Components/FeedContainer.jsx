@@ -2,8 +2,6 @@ import React, {useState, useEffect} from "react";
 import "../style.css";
 import {NewsBlock} from "./NewsBlock";
 
-// Show all feeds from the endpoint
-
 export const FeedContainer = () => {
     const [newsData, setNewsData] = useState([]);
     const apiKey = process.env.REACT_APP_API_KEY;

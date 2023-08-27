@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../style.css";
-import { TaskBlock } from "./TaskBlock";
+import {TaskBlock} from "./TaskBlock";
 
 export const TasksComponent = () => {
     const customStyle = {
@@ -8,22 +8,52 @@ export const TasksComponent = () => {
         overflow: "auto"
     }
 
-    return (
+    const [tasks, setTasks] = useState([]);
+
+    useEffect(() => {
+        const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        setTasks(storedTasks);
+    }, [])
+
+    const handleAddTask = (event) => {
+        if (event.key === "Enter") {
+            const taskText = event.target.value;
+            const newTask = { id: Date.now(), text: taskText };
+            const updatedTasks = [...tasks, newTask]
+            setTasks(updatedTasks);
+            localStorage.setItem("tasks", JSON.stringify(updatedTasks))
+            event.target.value = ""
+        }
+    }
+
+    const handleRemoveTask = (taskId) => {
+        const updatedTasks = tasks.filter((task) => task.id !== taskId);
+        console.log(updatedTasks)
+        setTasks(updatedTasks);
+        localStorage.setItem("tasks", JSON.stringify(updatedTasks));
+    }
+        return (
         <div>
-            <div className="titleContainer" >
+            <div className="titleContainer">
                 <h2 className="titleContainerText">Tasks</h2>
             </div>
             <div>
                 <div className="generalContainer" style={customStyle}>
                     <div className="addTaskContainer">
-                        <input type={"text"} className="addTaskInput"
-                               enterKeyHint={"enter"} placeholder={"Write the task and press enter \u23CE"}/>
+                        <input
+                            type={"text"}
+                            className="addTaskInput"
+                            enterKeyHint={"enter"}
+                            placeholder={"Write the task and press enter \u23CE"}
+                            onKeyDown={handleAddTask}
+                            />
                     </div>
-                    <TaskBlock task="Task 1" />
-                    <TaskBlock task="Task 2" />
-                    <TaskBlock task="Task 3" />
-                    <TaskBlock task="Task 4" />
-                    <TaskBlock task="Task 5" />
+                    {tasks.map((task) => (
+                        <TaskBlock key={task.id}
+                                   task={task.text}
+                                   onClick={() => handleRemoveTask(task.id)}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
