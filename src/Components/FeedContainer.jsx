@@ -1,18 +1,16 @@
 import React, {useState, useEffect} from "react";
 import "../style.css";
 import {NewsBlock} from "./NewsBlock";
-
 export const FeedContainer = () => {
     const [newsData, setNewsData] = useState([]);
     const apiKey = process.env.REACT_APP_API_KEY;
 
     useEffect(() => {
         const url =
-            "https://newsapi.org/v2/everything?" +
+            "https://gnews.io/api/v4/search?" +
             "q=programming&" +
-            "from=2023-08-20&" +
-            "sortBy=relevancy&" +
-            `apiKey=${apiKey}`;
+            "sortby=relevance&" +
+            `apikey=${apiKey}`;
 
         fetch(url)
             .then((response) => response.json())
@@ -31,7 +29,7 @@ export const FeedContainer = () => {
             </div>
             <div className="feedGeneralContainer">
                 <div className="newsList">
-                    {newsData.map((article, index) => (
+                    {newsData && newsData.map((article, index) => (
                         <NewsBlock
                             key={index}
                             title={article.title}

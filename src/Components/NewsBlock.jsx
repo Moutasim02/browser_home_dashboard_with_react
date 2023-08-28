@@ -13,7 +13,7 @@ export const NewsBlock = (params) => {
 
 function extractDomain(url) {
     let domain = "";
-    const regex = /^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n]+)/im;
+    const regex = /^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:/\n]+)/im;
     const match = url.match(regex);
     if (match && match.length > 1) {
         domain = match[1];

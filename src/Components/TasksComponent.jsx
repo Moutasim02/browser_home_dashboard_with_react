@@ -4,7 +4,7 @@ import {TaskBlock} from "./TaskBlock";
 
 export const TasksComponent = () => {
     const customStyle = {
-        height: "31rem",
+        height: "34.2rem",
         overflow: "auto"
     }
 
@@ -28,7 +28,6 @@ export const TasksComponent = () => {
 
     const handleRemoveTask = (taskId) => {
         const updatedTasks = tasks.filter((task) => task.id !== taskId);
-        console.log(updatedTasks)
         setTasks(updatedTasks);
         localStorage.setItem("tasks", JSON.stringify(updatedTasks));
     }
