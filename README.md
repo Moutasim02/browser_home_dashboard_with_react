@@ -8,6 +8,10 @@ After each day of work, I will provide a screenshot of the completed work along 
 
 ### Changelog
 
+**Date: 28/08/2023**
+- Final touches and deployment
+  - Access URL: https://browser-homepage-dashboard.vercel.app
+
 **Date: 27/08/2023**
 - Fixed Quick links with fixed 7 links as my bookmark, I know I should have done the custom links feature but I decided to make it easier
 - Fixed responsiveness for different screens like mobile devices
