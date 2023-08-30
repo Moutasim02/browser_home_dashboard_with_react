@@ -147,7 +147,7 @@ code {
 /* News List Styles */
 .newsList {
     overflow-y: auto;
-    max-height: 80vh;
+    max-height: 84vh;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
 }
