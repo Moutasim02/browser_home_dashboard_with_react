@@ -8,7 +8,8 @@ import whatsapp from "../images/whatsapp.png";
 import bb from "../images/bb.png";
 import udemy from "../images/udemy.png";
 import github from "../images/github.png";
-
+import chatgpt from "../images/chatgpt-logo-white-on-transparent-background-png.png"
+import bard from "../images/Google_Bard_logo.svg.png"
 export const QuickLinksContainer = () => {
     const customStyle = {
         height: "5rem"
@@ -56,6 +57,16 @@ export const QuickLinksContainer = () => {
                             imgSrc={udemy}
                             url={"https://www.udemy.com/"}
                             name={"Udemy"}
+                        />
+                        <QuickLinkBox
+                            imgSrc={chatgpt}
+                            url={"https://chat.openai.com/"}
+                            name={"ChatGPT"}
+                        />
+                        <QuickLinkBox
+                            imgSrc={bard}
+                            url={"https://bard.google.com/"}
+                            name={"Bard Ai"}
                         />
                     </div>
                 </div>
